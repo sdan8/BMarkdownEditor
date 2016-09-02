@@ -1,0 +1,8 @@
+F:\files\C＃\BMarkdownEditor\BMarkdownEditor\bin\Debug\BMarkdownEditor.exe
+F:\files\C＃\BMarkdownEditor\BMarkdownEditor\bin\Debug\BMarkdownEditor.pdb
+F:\files\C＃\BMarkdownEditor\BMarkdownEditor\obj\Debug\BMarkdownEditor.csprojResolveAssemblyReference.cache
+F:\files\C＃\BMarkdownEditor\BMarkdownEditor\obj\Debug\BMarkdownEditor.MainForm.resources
+F:\files\C＃\BMarkdownEditor\BMarkdownEditor\obj\Debug\BMarkdownEditor.Properties.Resources.resources
+F:\files\C＃\BMarkdownEditor\BMarkdownEditor\obj\Debug\BMarkdownEditor.csproj.GenerateResource.Cache
+F:\files\C＃\BMarkdownEditor\BMarkdownEditor\obj\Debug\BMarkdownEditor.exe
+F:\files\C＃\BMarkdownEditor\BMarkdownEditor\obj\Debug\BMarkdownEditor.pdb
