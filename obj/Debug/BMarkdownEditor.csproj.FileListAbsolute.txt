@@ -6,3 +6,4 @@ F:\files\C＃\BMarkdownEditor\BMarkdownEditor\obj\Debug\BMarkdownEditor.Properti
 F:\files\C＃\BMarkdownEditor\BMarkdownEditor\obj\Debug\BMarkdownEditor.csproj.GenerateResource.Cache
 F:\files\C＃\BMarkdownEditor\BMarkdownEditor\obj\Debug\BMarkdownEditor.exe
 F:\files\C＃\BMarkdownEditor\BMarkdownEditor\obj\Debug\BMarkdownEditor.pdb
+F:\files\C＃\BMarkdownEditor\BMarkdownEditor\obj\Debug\BMarkdownEditor.Frm_Input.resources

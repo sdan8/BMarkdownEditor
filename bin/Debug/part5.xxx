@@ -1,0 +1,35 @@
+</div>
+					<!--内容结束-->
+                  </div>
+           </div>
+     
+         </div>
+         <!--end left -->
+         <!--right-->
+          <div class="right" id="c_right">
+          <div class="s_about">
+          <h2>关于博主</h2>
+           <img src="../images/my.jpg" width="230" height="230" alt="博主"/>
+           <p>博主：sdan8</p>
+           <p>职业：职业应该填什么啊。。。</p>
+           <p>简介：</p>
+           <p>
+           
+           <div class="clear"></div>
+           </p>
+          </div>
+         </div>
+         <!--end  right-->
+         <div class="clear"></div>
+         
+    </div>
+    <!--content end-->
+    <!--footer-->
+    <div id="footer">
+     <p>2016年9月</p>
+    </div>
+    <!--footer end-->
+    <script type="text/javascript">jQuery(".lanmubox").slide({easing:"easeOutBounce",delayTime:400});</script>
+    <script  type="text/javascript" src="../js/nav.js"></script>
+</body>
+</html>

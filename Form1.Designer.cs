@@ -50,6 +50,9 @@
 			this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
 			this.toolStripStatusLabel_line2 = new System.Windows.Forms.ToolStripStatusLabel();
 			this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
+			this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+			this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+			this.tsmi_post = new System.Windows.Forms.ToolStripMenuItem();
 			this.tabControl1.SuspendLayout();
 			this.tabPg_preview.SuspendLayout();
 			this.tabPg_html.SuspendLayout();
@@ -135,9 +138,12 @@
 			this.文件ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
             this.toolStripMenuItem2,
+            this.toolStripSeparator1,
             this.保存为MarkdownToolStripMenuItem,
             this.另存为ToolStripMenuItem,
             this.导出为HTMLToolStripMenuItem,
+            this.tsmi_post,
+            this.toolStripSeparator2,
             this.退出EToolStripMenuItem});
 			this.文件ToolStripMenuItem.Name = "文件ToolStripMenuItem";
 			this.文件ToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
@@ -253,6 +259,23 @@
 			this.toolStripStatusLabel3.Size = new System.Drawing.Size(111, 17);
 			this.toolStripStatusLabel3.Text = "按F11进入全屏模式";
 			// 
+			// toolStripSeparator1
+			// 
+			this.toolStripSeparator1.Name = "toolStripSeparator1";
+			this.toolStripSeparator1.Size = new System.Drawing.Size(200, 6);
+			// 
+			// toolStripSeparator2
+			// 
+			this.toolStripSeparator2.Name = "toolStripSeparator2";
+			this.toolStripSeparator2.Size = new System.Drawing.Size(200, 6);
+			// 
+			// tsmi_post
+			// 
+			this.tsmi_post.Name = "tsmi_post";
+			this.tsmi_post.Size = new System.Drawing.Size(203, 22);
+			this.tsmi_post.Text = "导出文章";
+			this.tsmi_post.Click += new System.EventHandler(this.tsmi_post_Click);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -307,6 +330,9 @@
 		private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel_line;
 		private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel_line2;
 		private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+		private System.Windows.Forms.ToolStripMenuItem tsmi_post;
 	}
 }
 

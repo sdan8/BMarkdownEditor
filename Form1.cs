@@ -158,7 +158,7 @@ namespace BMarkdownEditor
 		}
 
 		/// <summary>
-		/// 导出
+		/// 导出为HTML
 		/// </summary>
 		/// <param name="sender"></param>
 		/// <param name="e"></param>
@@ -175,6 +175,34 @@ namespace BMarkdownEditor
 			catch (Exception)
 			{
 				MessageBox.Show("导出失败！");
+				return;
+			}
+		}
+
+		/// <summary>
+		/// 导出为文章
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void tsmi_post_Click(object sender, EventArgs e)
+		{
+			//默认文件名格式为：2016-9-1-1
+			string date = DateTime.Now.ToString("yyyy-M-d") + "-1";
+			SaveFileDialog sfd = new SaveFileDialog();
+			sfd.Filter = "html(*.html)|*.html";
+			sfd.FileName = date;
+			sfd.ShowDialog();
+
+			Frm_Input frm_Input = new Frm_Input();
+			frm_Input.ShowDialog();
+			try
+			{
+				Utils.EditorIO.SaveToPost(sfd.FileName, richTxt_html, frm_Input.titleValue, frm_Input.authorValue);
+				toolStripMenuItem1.Text = "<已导出>" + sfd.FileName;
+			}
+			catch (Exception)
+			{
+				MessageBox.Show("导出文章失败！");
 				return;
 			}
 		}
@@ -239,6 +267,8 @@ namespace BMarkdownEditor
 			tabControl1.Location = new Point(richTxt_markdown.Size.Width + 80, 55);
 			tabControl1.Size = new Size((this.Size.Width - 120) / 2, this.Size.Height - 150);
 		}
+
+		
 
 	}
 }

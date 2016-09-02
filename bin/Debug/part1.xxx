@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>这里是标题-sdan8的个人博客</title>
+<meta name="keywords" content="个人博客" />
+<meta name="description" content="" />
+<link rel="stylesheet" href="../css/markdowncss.css"/>
+<link rel="stylesheet" href="../css/index.css"/>
+<link rel="stylesheet" href="../css/style.css"/>
+
+<script type="text/javascript" src="../js/jquery1.42.min.js"></script>
+<script type="text/javascript" src="../js/jquery.SuperSlide.2.1.1.js"></script>
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+      <!--header start-->
+    <div id="header">
+      <h1>sdan8的个人博客</h1>
+      <p>好好学习，天天向上！</p>    
+    </div>
+     <!--header end-->
+    <!--nav-->
+     <div id="nav">
+         <ul>
+         <li><a href="../index.html">首页</a></li>
+         <li><a href="../shuo.html">说说</a></li>
+         <li><a href="../learn.html">文章</a></li>
+         <li><a href="../about.html">关于我</a></li>
+         <div class="clear"></div>
+        </ul>
+      </div>
+       <!--nav end-->
+    <!--content start-->
+    <div id="content">
+       <!--left-->
+         <div class="left" id="news">
+           <div class="weizi">
+           <div class="wz_text">当前位置：<a href="../index.html">首页</a>><a href="../learn.html">文章</a>><span>文章内容</span></div>
+           </div>
+           <div class="news_content">
+                  <div class="news_top">
+                    <h1>
