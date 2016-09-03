@@ -24,3 +24,10 @@
 
 由于软件初衷是为了我自己写博客方便。所以功能也是为我自己量身定制的。。。
 
+## 软件截图
+
+我也知道UI太丑了。。。
+
+![预览](https://github.com/sdan8/MarkdownPhoto/blob/master/BMarkdownEditor_1.png?raw=true "预览")
+
+![HTML](https://github.com/sdan8/MarkdownPhoto/blob/master/BMarkdownEditor_2.png?raw=true "HTML")
