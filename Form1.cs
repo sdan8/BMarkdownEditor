@@ -19,8 +19,12 @@ namespace BMarkdownEditor
 
 		private void MainForm_Load(object sender, EventArgs e)
 		{
-			BtnVisible();
-			toolStripStatusLabel1.Text = "BMarkdownEditor";
+			BtnVisible();			
+			
+			richTxt_markdown.Location = new Point(40, 80);
+			richTxt_markdown.Size = new Size((this.Size.Width - 120) / 2, this.Size.Height - 180);
+			tabControl1.Location = new Point(richTxt_markdown.Size.Width + 80, 55);
+			tabControl1.Size = new Size((this.Size.Width - 120) / 2, this.Size.Height - 150);
 		}
 
 		private void richTxt_markdown_TextChanged(object sender, EventArgs e)
@@ -53,7 +57,7 @@ namespace BMarkdownEditor
 		{
 			Clipboard.SetDataObject(richTxt_html.Text);
 			MessageBox.Show("已复制到剪贴板！");
-			
+
 			toolStripStatusLabel1.Text = "已复制";
 		}
 
@@ -230,12 +234,14 @@ namespace BMarkdownEditor
 				this.FormBorderStyle = FormBorderStyle.None;
 				this.WindowState = FormWindowState.Maximized;
 				toolStripStatusLabel3.Text = "全屏模式 按F11退出全屏";
+				全屏ToolStripMenuItem.Text = "退出全屏";
 			}
 			else
 			{
 				this.FormBorderStyle = FormBorderStyle.Sizable;
 				this.WindowState = FormWindowState.Normal;
 				toolStripStatusLabel3.Text = "按F11进入全屏模式";
+				全屏ToolStripMenuItem.Text = "全屏";
 			}
 		}
 
@@ -268,7 +274,15 @@ namespace BMarkdownEditor
 			tabControl1.Size = new Size((this.Size.Width - 120) / 2, this.Size.Height - 150);
 		}
 
-		
+		private void richTxt_markdown_KeyDown(object sender, KeyEventArgs e)
+		{
+			if (e.KeyCode == Keys.Tab)
+			{
+				richTxt_markdown.SelectedText = "    ";
+				e.SuppressKeyPress = true;
+			}
+		}
+
 
 	}
 }

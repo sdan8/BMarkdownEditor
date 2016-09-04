@@ -38,9 +38,12 @@
 			this.文件ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+			this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
 			this.保存为MarkdownToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.另存为ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.导出为HTMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmi_post = new System.Windows.Forms.ToolStripMenuItem();
+			this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
 			this.退出EToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.全屏ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.btn_copyHtml = new System.Windows.Forms.Button();
@@ -50,9 +53,6 @@
 			this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
 			this.toolStripStatusLabel_line2 = new System.Windows.Forms.ToolStripStatusLabel();
 			this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
-			this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-			this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-			this.tsmi_post = new System.Windows.Forms.ToolStripMenuItem();
 			this.tabControl1.SuspendLayout();
 			this.tabPg_preview.SuspendLayout();
 			this.tabPg_html.SuspendLayout();
@@ -65,7 +65,7 @@
 			this.tabControl1.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
 			this.tabControl1.Controls.Add(this.tabPg_preview);
 			this.tabControl1.Controls.Add(this.tabPg_html);
-			this.tabControl1.Location = new System.Drawing.Point(670, 55);
+			this.tabControl1.Location = new System.Drawing.Point(516, 50);
 			this.tabControl1.Name = "tabControl1";
 			this.tabControl1.SelectedIndex = 0;
 			this.tabControl1.Size = new System.Drawing.Size(590, 560);
@@ -115,12 +115,14 @@
 			// richTxt_markdown
 			// 
 			this.richTxt_markdown.AcceptsTab = true;
+			this.richTxt_markdown.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
 			this.richTxt_markdown.Location = new System.Drawing.Point(40, 80);
 			this.richTxt_markdown.Name = "richTxt_markdown";
-			this.richTxt_markdown.Size = new System.Drawing.Size(590, 530);
+			this.richTxt_markdown.Size = new System.Drawing.Size(440, 530);
 			this.richTxt_markdown.TabIndex = 1;
 			this.richTxt_markdown.Text = "";
 			this.richTxt_markdown.TextChanged += new System.EventHandler(this.richTxt_markdown_TextChanged);
+			this.richTxt_markdown.KeyDown += new System.Windows.Forms.KeyEventHandler(this.richTxt_markdown_KeyDown);
 			// 
 			// menuStrip1
 			// 
@@ -165,6 +167,11 @@
 			this.toolStripMenuItem2.Text = "打开(&O)";
 			this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
 			// 
+			// toolStripSeparator1
+			// 
+			this.toolStripSeparator1.Name = "toolStripSeparator1";
+			this.toolStripSeparator1.Size = new System.Drawing.Size(200, 6);
+			// 
 			// 保存为MarkdownToolStripMenuItem
 			// 
 			this.保存为MarkdownToolStripMenuItem.Name = "保存为MarkdownToolStripMenuItem";
@@ -188,6 +195,18 @@
 			this.导出为HTMLToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
 			this.导出为HTMLToolStripMenuItem.Text = "导出为HTML";
 			this.导出为HTMLToolStripMenuItem.Click += new System.EventHandler(this.导出为HTMLToolStripMenuItem_Click);
+			// 
+			// tsmi_post
+			// 
+			this.tsmi_post.Name = "tsmi_post";
+			this.tsmi_post.Size = new System.Drawing.Size(203, 22);
+			this.tsmi_post.Text = "导出文章";
+			this.tsmi_post.Click += new System.EventHandler(this.tsmi_post_Click);
+			// 
+			// toolStripSeparator2
+			// 
+			this.toolStripSeparator2.Name = "toolStripSeparator2";
+			this.toolStripSeparator2.Size = new System.Drawing.Size(200, 6);
 			// 
 			// 退出EToolStripMenuItem
 			// 
@@ -259,23 +278,6 @@
 			this.toolStripStatusLabel3.Size = new System.Drawing.Size(111, 17);
 			this.toolStripStatusLabel3.Text = "按F11进入全屏模式";
 			// 
-			// toolStripSeparator1
-			// 
-			this.toolStripSeparator1.Name = "toolStripSeparator1";
-			this.toolStripSeparator1.Size = new System.Drawing.Size(200, 6);
-			// 
-			// toolStripSeparator2
-			// 
-			this.toolStripSeparator2.Name = "toolStripSeparator2";
-			this.toolStripSeparator2.Size = new System.Drawing.Size(200, 6);
-			// 
-			// tsmi_post
-			// 
-			this.tsmi_post.Name = "tsmi_post";
-			this.tsmi_post.Size = new System.Drawing.Size(203, 22);
-			this.tsmi_post.Text = "导出文章";
-			this.tsmi_post.Click += new System.EventHandler(this.tsmi_post_Click);
-			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -287,7 +289,7 @@
 			this.Controls.Add(this.tabControl1);
 			this.Controls.Add(this.menuStrip1);
 			this.MainMenuStrip = this.menuStrip1;
-			this.MinimumSize = new System.Drawing.Size(1300, 710);
+			this.MinimumSize = new System.Drawing.Size(1100, 710);
 			this.Name = "MainForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "BMarkdownEditor";
