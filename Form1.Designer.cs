@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.tabPg_preview = new System.Windows.Forms.TabPage();
 			this.webBrowser1 = new System.Windows.Forms.WebBrowser();
@@ -288,6 +289,7 @@
 			this.Controls.Add(this.richTxt_markdown);
 			this.Controls.Add(this.tabControl1);
 			this.Controls.Add(this.menuStrip1);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MainMenuStrip = this.menuStrip1;
 			this.MinimumSize = new System.Drawing.Size(1100, 710);
 			this.Name = "MainForm";
